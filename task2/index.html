@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+        integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Palestinian Franchiser</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolores quibusdam!</p>
+    </header>
+
+    <main>
+        
+        <form name="myform" onsubmit="return placeOrder()">
+            <h2>Place Your Order :</h2>
+            <div class="mb-3">
+                <label for="city" class="form-label fs-5 mt-4">City :</label>
+                <!-- <input type="text" step="0.1" class="form-control" id="city" /> -->
+                <select class="form-select" name="city" id="city">
+                    
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="product" class="form-label fs-5">Product :</label>
+                <!-- <input type="text" class="form-control" id="product" /> -->
+                <select class="form-select" name="product" id="product">
+                    
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="quantity" class="form-label fs-5">Quantity :</label>
+                <input type="number" class="form-control" id="quantity" min="1" value="1">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mybtn">Submit</button>
+        </form>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

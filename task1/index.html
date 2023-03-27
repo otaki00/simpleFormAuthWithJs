@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+        integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Arwa Toy Store</h1>
+        <p>welcome to my store, here you will find the joy for your child</p>
+    </header>
+    <main>
+        <form name="myform" onsubmit="return calculateOrder()">
+            <h2>Place Your Order :</h2>
+            <div class="container">
+                <div class="mb-3">
+                    <label for="tripCost" class="form-label fs-5 mt-4">Trip Cost :</label>
+                    <input type="number" step="0.1" class="form-control" id="tripCost" min="0" >
+                </div>
+                <div class="mb-3">
+                    <label for="puzzelsNumber" class="form-label fs-5">Number Of Puzzels :</label>
+                    <input type="number" class="form-control" id="puzzelsNumber" min="0">
+                </div>
+                <div class="mb-3">
+                    <label for="dollsNumber" class="form-label fs-5">Number Of Dolls :</label>
+                    <input type="number" class="form-control" id="dollsNumber" min="0">
+                </div>
+                <div class="mb-3">
+                    <label for="bearsNumber" class="form-label fs-5">Number Of Teddy Bear :</label>
+                    <input type="number" class="form-control" id="bearsNumber" min="0">
+                </div>
+                <div class="mb-3">
+                    <label for="minionsNumber" class="form-label fs-5">Number Of Minoins :</label>
+                    <input type="number" class="form-control" id="minionsNumber" min="0">
+                </div>
+                <div class="mb-3">
+                    <label for="trucksNumber" class="form-label fs-5">Number Of Truck :</label>
+                    <input type="number" class="form-control" id="trucksNumber" min="0">
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100 mybtn">Submit</button>
+        </form>
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
